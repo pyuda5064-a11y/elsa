@@ -71,8 +71,8 @@ header {
 /* HERO */
 
 .hero-image img {
-    width: 120px !important;
-    height: 120px !important;
+    width: 50px !important;
+    height: 50px !important;
     object-fit: cover;
     border-radius: 50%;
     display: block;
