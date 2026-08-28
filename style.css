@@ -175,8 +175,8 @@ header {
 }
 
 .profile-circle img {
-    width: 50%;
-    height: 150%;
+    width: 250%;
+    height: 250%;
 
     object-fit: cover;
 }
