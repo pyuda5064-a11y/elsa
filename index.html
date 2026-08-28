@@ -6,364 +6,416 @@
 
     <title>Portofolio Elsa | RPL</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Elsa<span>.</span></h2>
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
 
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Tentang Saya</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
+        <h2 class="logo">
+            Elsa<span>.</span>
+        </h2>
 
-            <button class="menu-btn" id="menuBtn">☰</button>
-        </nav>
-    </header>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <p class="hello">Halo, saya</p>
+        <button class="menu-btn" id="menuBtn">☰</button>
 
-            <h1>Elsa</h1>
+    </nav>
+</header>
 
-            <h2>
-                Siswa <span>Rekayasa Perangkat Lunak</span>
-            </h2>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <p class="hello">Halo, saya</p>
+
+        <h1>Elsa</h1>
+
+        <h2>
+            Siswa
+            <span>Rekayasa Perangkat Lunak</span>
+        </h2>
+
+        <p>
+            SMK Negeri 1 Semparuk
+        </p>
+
+        <p class="description">
+            Saya adalah siswa jurusan Rekayasa Perangkat Lunak
+            yang tertarik dengan dunia teknologi, pemrograman,
+            desain website, dan pengembangan aplikasi.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">
+                Lihat Proyek
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Hubungi Saya
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- FOTO PROFIL -->
+    <div class="hero-card">
+
+        <div class="profile-circle">
+
+            <!-- FOTO ELSA -->
+            <img src="elsa.jpg" alt="Foto Elsa">
+
+        </div>
+
+        <h3>Elsa</h3>
+
+        <p>RPL Student</p>
+
+        <p>SMK Negeri 1 Semparuk</p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+
+    <div class="section-title">
+        <p>TENTANG SAYA</p>
+        <h2>Kenali Saya</h2>
+    </div>
+
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <h3>Halo! Saya Elsa 👋</h3>
 
             <p>
-                SMK Negeri 1 Semparuk
+                Saya merupakan siswa SMK Negeri 1 Semparuk
+                dari jurusan Rekayasa Perangkat Lunak (RPL).
             </p>
 
-            <p class="description">
-                Saya adalah siswa jurusan Rekayasa Perangkat Lunak
-                yang tertarik dengan dunia teknologi, pemrograman,
-                desain website, dan pengembangan aplikasi.
+            <p>
+                Saya memiliki ketertarikan dalam bidang teknologi
+                dan pengembangan website. Saya sedang belajar
+                HTML, CSS, JavaScript, PHP, serta database.
             </p>
 
-            <div class="buttons">
-                <a href="#projects" class="btn">Lihat Proyek</a>
-                <a href="#contact" class="btn secondary">Hubungi Saya</a>
-            </div>
+            <p>
+                Melalui berbagai proyek sekolah, saya terus
+                mengembangkan kemampuan dalam membuat website
+                yang menarik, responsif, dan mudah digunakan.
+            </p>
+
         </div>
 
-        <div class="hero-card">
-            <div class="elsa.jpg">
-                E
+
+        <div class="about-info">
+
+            <div class="info-box">
+                <h4>Nama</h4>
+                <p>Elsa</p>
             </div>
 
-            <h3>Elsa</h3>
-            <p>RPL Student</p>
-            <p>SMK Negeri 1 Semparuk</p>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about">
-        <div class="section-title">
-            <p>TENTANG SAYA</p>
-            <h2>Kenali Saya</h2>
-        </div>
-
-        <div class="about-container">
-            <div class="about-text">
-                <h3>Halo! Saya Elsa 👋</h3>
-
-                <p>
-                    Saya merupakan siswa SMK Negeri 1 Semparuk
-                    dari jurusan Rekayasa Perangkat Lunak (RPL).
-                </p>
-
-                <p>
-                    Saya memiliki ketertarikan dalam bidang teknologi
-                    dan pengembangan website. Saya sedang belajar
-                    HTML, CSS, JavaScript, PHP, serta database.
-                </p>
-
-                <p>
-                    Melalui berbagai proyek sekolah, saya terus
-                    mengembangkan kemampuan dalam membuat website
-                    yang menarik, responsif, dan mudah digunakan.
-                </p>
+            <div class="info-box">
+                <h4>Sekolah</h4>
+                <p>SMK Negeri 1 Semparuk</p>
             </div>
 
-            <div class="about-info">
-                <div class="info-box">
-                    <h4>Nama</h4>
-                    <p>Elsa</p>
-                </div>
-
-                <div class="info-box">
-                    <h4>Sekolah</h4>
-                    <p>SMK Negeri 1 Semparuk</p>
-                </div>
-
-                <div class="info-box">
-                    <h4>Jurusan</h4>
-                    <p>Rekayasa Perangkat Lunak</p>
-                </div>
-
-                <div class="info-box">
-                    <h4>Bidang</h4>
-                    <p>Web Development</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section skills-section" id="skills">
-        <div class="section-title">
-            <p>KEAHLIAN</p>
-            <h2>Kemampuan Saya</h2>
-        </div>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <div class="skill-icon">HTML</div>
-                <h3>HTML</h3>
-                <p>
-                    Membuat struktur halaman website
-                    menggunakan HTML5.
-                </p>
-
-                <div class="progress">
-                    <div class="progress-bar html"></div>
-                </div>
+            <div class="info-box">
+                <h4>Jurusan</h4>
+                <p>Rekayasa Perangkat Lunak</p>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">CSS</div>
-                <h3>CSS</h3>
-                <p>
-                    Mendesain website agar menarik,
-                    modern, dan responsif.
-                </p>
-
-                <div class="progress">
-                    <div class="progress-bar css"></div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">JS</div>
-                <h3>JavaScript</h3>
-                <p>
-                    Membuat website menjadi interaktif
-                    menggunakan JavaScript.
-                </p>
-
-                <div class="progress">
-                    <div class="progress-bar js"></div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">PHP</div>
-                <h3>PHP</h3>
-                <p>
-                    Mempelajari pemrograman website
-                    menggunakan PHP.
-                </p>
-
-                <div class="progress">
-                    <div class="progress-bar php"></div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">DB</div>
-                <h3>Database</h3>
-                <p>
-                    Memahami dasar database dan
-                    MySQL.
-                </p>
-
-                <div class="progress">
-                    <div class="progress-bar database"></div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">UI</div>
-                <h3>Web Design</h3>
-                <p>
-                    Membuat tampilan website yang
-                    sederhana dan nyaman digunakan.
-                </p>
-
-                <div class="progress">
-                    <div class="progress-bar design"></div>
-                </div>
+            <div class="info-box">
+                <h4>Bidang</h4>
+                <p>Web Development</p>
             </div>
 
         </div>
-    </section>
 
-    <!-- Projects -->
-    <section class="section" id="projects">
-        <div class="section-title">
-            <p>PORTOFOLIO</p>
-            <h2>Proyek Saya</h2>
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section class="section skills-section" id="skills">
+
+    <div class="section-title">
+        <p>KEAHLIAN</p>
+        <h2>Kemampuan Saya</h2>
+    </div>
+
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <div class="skill-icon">HTML</div>
+            <h3>HTML</h3>
+            <p>Membuat struktur halaman website menggunakan HTML5.</p>
+
+            <div class="progress">
+                <div class="progress-bar html"></div>
+            </div>
         </div>
 
-        <div class="projects-container">
 
-            <div class="project-card">
-                <div class="project-image">
-                    📚
-                </div>
+        <div class="skill-card">
+            <div class="skill-icon">CSS</div>
+            <h3>CSS</h3>
+            <p>Mendesain website agar menarik, modern, dan responsif.</p>
 
-                <div class="project-content">
-                    <h3>Website Perpustakaan</h3>
-
-                    <p>
-                        Website sederhana untuk mengelola
-                        data buku dan anggota perpustakaan.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
+            <div class="progress">
+                <div class="progress-bar css"></div>
             </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    💻
-                </div>
-
-                <div class="project-content">
-                    <h3>Website Portofolio</h3>
-
-                    <p>
-                        Website personal yang berisi informasi
-                        diri, keahlian, dan proyek.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    📝
-                </div>
-
-                <div class="project-content">
-                    <h3>Aplikasi Data Siswa</h3>
-
-                    <p>
-                        Aplikasi sederhana untuk menampilkan
-                        dan mengelola data siswa.
-                    </p>
-
-                    <div class="tags">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact-section" id="contact">
-        <div class="section-title">
-            <p>KONTAK</p>
-            <h2>Hubungi Saya</h2>
         </div>
 
-        <div class="contact-container">
 
-            <div class="contact-info">
-                <h3>Mari Terhubung 👋</h3>
+        <div class="skill-card">
+            <div class="skill-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Membuat website menjadi interaktif menggunakan JavaScript.</p>
+
+            <div class="progress">
+                <div class="progress-bar js"></div>
+            </div>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">PHP</div>
+            <h3>PHP</h3>
+            <p>Mempelajari pemrograman website menggunakan PHP.</p>
+
+            <div class="progress">
+                <div class="progress-bar php"></div>
+            </div>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">DB</div>
+            <h3>Database</h3>
+            <p>Memahami dasar database dan MySQL.</p>
+
+            <div class="progress">
+                <div class="progress-bar database"></div>
+            </div>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">UI</div>
+            <h3>Web Design</h3>
+            <p>Membuat tampilan website yang sederhana dan nyaman digunakan.</p>
+
+            <div class="progress">
+                <div class="progress-bar design"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+
+    <div class="section-title">
+        <p>PORTOFOLIO</p>
+        <h2>Proyek Saya</h2>
+    </div>
+
+
+    <div class="projects-container">
+
+        <div class="project-card">
+
+            <div class="project-image">
+                📚
+            </div>
+
+            <div class="project-content">
+
+                <h3>Website Perpustakaan</h3>
 
                 <p>
-                    Jika ingin mengetahui lebih banyak tentang
-                    saya atau proyek yang saya buat, silakan
-                    hubungi saya.
+                    Website sederhana untuk mengelola
+                    data buku dan anggota perpustakaan.
                 </p>
 
-                <div class="contact-item">
-                    <strong>📧 Email</strong>
-                    <p>eelsa1938@gmail.com/p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
                 </div>
 
-                <div class="contact-item">
-                    <strong>📱 WhatsApp</strong>
-                    <p>083827809980</p>
-                </div>
-
-                <div class="contact-item">
-                    <strong>📍 Lokasi</strong>
-                    <p>Sambas, Kalimantan Barat</p>
-                </div>
             </div>
 
-            <form id="contactForm">
+        </div>
 
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Nama"
-                    required
-                >
 
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Email"
-                    required
-                >
+        <div class="project-card">
 
-                <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Pesan"
-                    required
-                ></textarea>
+            <div class="project-image">
+                💻
+            </div>
 
-                <button type="submit" class="btn">
-                    Kirim Pesan
-                </button>
+            <div class="project-content">
 
-            </form>
+                <h3>Website Portofolio</h3>
+
+                <p>
+                    Website personal yang berisi informasi
+                    diri, keahlian, dan proyek.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
 
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>
-            © <span id="year"></span> Elsa.
-            Dibuat dengan ❤️ menggunakan HTML, CSS & JavaScript.
-        </p>
-    </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+        <div class="project-card">
+
+            <div class="project-image">
+                📝
+            </div>
+
+            <div class="project-content">
+
+                <h3>Aplikasi Data Siswa</h3>
+
+                <p>
+                    Aplikasi sederhana untuk menampilkan
+                    dan mengelola data siswa.
+                </p>
+
+                <div class="tags">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact-section" id="contact">
+
+    <div class="section-title">
+        <p>KONTAK</p>
+        <h2>Hubungi Saya</h2>
+    </div>
+
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Mari Terhubung 👋</h3>
+
+            <p>
+                Jika ingin mengetahui lebih banyak tentang
+                saya atau proyek yang saya buat, silakan
+                hubungi saya.
+            </p>
+
+            <div class="contact-item">
+                <strong>📧 Email</strong>
+                <p>eelsa1938@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <strong>📱 WhatsApp</strong>
+                <p>083827809980</p>
+            </div>
+
+            <div class="contact-item">
+                <strong>📍 Lokasi</strong>
+                <p>seburing, Kalimantan Barat</p>
+            </div>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Nama"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Pesan"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Kirim Pesan
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+    <p>
+        © <span id="year"></span> Elsa.
+        Dibuat dengan ❤️ menggunakan HTML, CSS & JavaScript.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
