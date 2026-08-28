@@ -14,20 +14,21 @@ body {
     color: #222;
 }
 
+
 /* NAVBAR */
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255,255,255,0.95);
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
 .navbar {
     max-width: 1100px;
-    margin: auto;
     height: 70px;
+    margin: auto;
     padding: 0 20px;
 
     display: flex;
@@ -37,6 +38,7 @@ header {
 
 .logo {
     font-size: 28px;
+    font-weight: 700;
 }
 
 .logo span {
@@ -50,10 +52,9 @@ header {
 }
 
 .nav-menu a {
-    text-decoration: none;
     color: #333;
+    text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
 }
 
 .nav-menu a:hover {
@@ -64,19 +65,22 @@ header {
     display: none;
     border: none;
     background: none;
-    font-size: 25px;
-    cursor: pointer;
+    font-size: 26px;
 }
+
 
 /* HERO */
 
-.hero-image img {
-    width: 50px !important;
-    height: 50px !important;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+.hero {
+    min-height: 90vh;
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .hero-text {
@@ -103,26 +107,24 @@ header {
     color: #6c63ff;
 }
 
-.hero-text > p {
-    margin-top: 12px;
-}
-
 .description {
-    line-height: 1.8;
+    margin-top: 15px;
     color: #666;
-    max-width: 600px;
+    line-height: 1.8;
 }
 
 .buttons {
     margin-top: 30px;
+
     display: flex;
     gap: 15px;
 }
 
 .btn {
     display: inline-block;
-    border: none;
     padding: 13px 25px;
+
+    border: none;
     border-radius: 8px;
 
     background: #6c63ff;
@@ -133,12 +135,10 @@ header {
     font-weight: 500;
 
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(108,99,255,0.3);
 }
 
 .btn.secondary {
@@ -147,11 +147,12 @@ header {
     color: #6c63ff;
 }
 
-/* HERO CARD */
+
+/* FOTO PROFIL */
 
 .hero-card {
-    width: 300px;
-    padding: 45px 30px;
+    width: 280px;
+    padding: 35px 25px;
 
     background: white;
     border-radius: 25px;
@@ -162,27 +163,34 @@ header {
 }
 
 .profile-circle {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 
     margin: auto;
+
     border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     overflow: hidden;
+
+    background: #6c63ff;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
 
 .hero-card h3 {
-    margin-top: 20px;
-    font-size: 25px;
+    margin-top: 18px;
+    font-size: 23px;
 }
 
 .hero-card p {
     color: #777;
+    font-size: 14px;
 }
+
 
 /* SECTION */
 
@@ -204,8 +212,8 @@ header {
 
 .section-title h2 {
     font-size: 35px;
-    margin-top: 5px;
 }
+
 
 /* ABOUT */
 
@@ -245,6 +253,7 @@ header {
     margin-bottom: 8px;
 }
 
+
 /* SKILLS */
 
 .skills-section {
@@ -267,12 +276,6 @@ header {
     border-radius: 15px;
 
     box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-
-    transition: 0.3s;
-}
-
-.skill-card:hover {
-    transform: translateY(-7px);
 }
 
 .skill-icon {
@@ -304,16 +307,16 @@ header {
 
 .progress {
     height: 8px;
+    margin-top: 20px;
+
     background: #eee;
     border-radius: 10px;
-    margin-top: 20px;
     overflow: hidden;
 }
 
 .progress-bar {
     height: 100%;
     background: #6c63ff;
-    border-radius: 10px;
 }
 
 .html {
@@ -340,6 +343,7 @@ header {
     width: 75%;
 }
 
+
 /* PROJECT */
 
 .projects-container {
@@ -354,12 +358,6 @@ header {
     overflow: hidden;
 
     box-shadow: 0 8px 25px rgba(0,0,0,0.07);
-
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
 }
 
 .project-image {
@@ -371,7 +369,7 @@ header {
 
     background: #e9e7ff;
 
-    font-size: 70px;
+    font-size: 65px;
 }
 
 .project-content {
@@ -398,6 +396,7 @@ header {
 
 .tags span {
     padding: 5px 10px;
+
     border-radius: 5px;
 
     background: #eeeaff;
@@ -406,11 +405,12 @@ header {
     font-size: 12px;
 }
 
+
 /* CONTACT */
 
 .contact-section {
-    background: #f0f0ff;
     max-width: none;
+    background: #f0f0ff;
 }
 
 .contact-container {
@@ -469,25 +469,20 @@ textarea:focus {
     border-color: #6c63ff;
 }
 
-textarea {
-    resize: vertical;
-}
 
 /* FOOTER */
 
 footer {
     padding: 25px 20px;
+
     text-align: center;
 
     background: #151529;
     color: white;
 }
 
-footer p {
-    font-size: 14px;
-}
 
-/* RESPONSIVE */
+/* RESPONSIVE HP */
 
 @media (max-width: 800px) {
 
@@ -510,8 +505,6 @@ footer p {
         background: white;
 
         text-align: center;
-
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     }
 
     .nav-menu.active {
@@ -542,18 +535,31 @@ footer p {
     }
 }
 
+
+/* HP KECIL */
+
 @media (max-width: 550px) {
 
+    .hero {
+        padding-top: 50px;
+    }
+
     .hero h1 {
-        font-size: 48px;
+        font-size: 45px;
     }
 
     .hero h2 {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .hero-card {
-        width: 100%;
+        width: 250px;
+    }
+
+    /* FOTO DIBUAT KECIL */
+    .profile-circle {
+        width: 100px;
+        height: 100px;
     }
 
     .about-info {
