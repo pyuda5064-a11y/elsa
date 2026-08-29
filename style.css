@@ -123,8 +123,8 @@ nav ul li a:hover {
 /* UKURAN FOTO PROFIL */
 .profile-img {
     width: 180px !important;
-    height: 180px !important;
-    max-width: 180px !important;
+    height: 100px !important;
+    max-width: 100px !important;
     max-height: 180px !important;
     object-fit: cover;
     object-position: center;
@@ -326,8 +326,8 @@ footer p {
 
     /* FOTO DI HP */
     .profile-img {
-        width: 150px !important;
-        height: 150px !important;
+        width: 100px !important;
+        height: 100px !important;
         max-width: 150px !important;
         max-height: 150px !important;
     }
