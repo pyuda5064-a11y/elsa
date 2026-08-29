@@ -1,26 +1,16 @@
-// ============================
-// MENU MOBILE
-// ============================
+// ================= MENU HP =================
 
-const menuBtn = document.getElementById("menuBtn");
+const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
-menuBtn.addEventListener("click", function () {
+menuToggle.addEventListener("click", function () {
 
     navMenu.classList.toggle("active");
-
-    if (navMenu.classList.contains("active")) {
-        menuBtn.textContent = "✕";
-    } else {
-        menuBtn.textContent = "☰";
-    }
 
 });
 
 
-// ============================
-// CLOSE MENU SETELAH KLIK
-// ============================
+// ================= TUTUP MENU SETELAH KLIK =================
 
 const navLinks = document.querySelectorAll(".nav-menu a");
 
@@ -29,78 +19,38 @@ navLinks.forEach(function(link) {
     link.addEventListener("click", function() {
 
         navMenu.classList.remove("active");
-        menuBtn.textContent = "☰";
 
     });
 
 });
 
 
-// ============================
-// FORM KONTAK
-// ============================
+// ================= ANIMASI SCROLL =================
 
-const contactForm = document.getElementById("contactForm");
+const sections = document.querySelectorAll("section");
 
-contactForm.addEventListener("submit", function(event) {
+window.addEventListener("scroll", function() {
 
-    event.preventDefault();
+    let current = "";
 
-    const name = document.getElementById("name").value;
+    sections.forEach(function(section) {
 
-    alert(
-        "Terima kasih, " + name +
-        "! Pesan kamu berhasil dikirim."
-    );
+        const sectionTop = section.offsetTop - 150;
 
-    contactForm.reset();
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
 
-});
+    });
 
+    navLinks.forEach(function(link) {
 
-// ============================
-// TAHUN FOOTER OTOMATIS
-// ============================
+        link.classList.remove("active");
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
 
-
-// ============================
-// ANIMASI SAAT SCROLL
-// ============================
-
-const cards = document.querySelectorAll(
-    ".skill-card, .project-card, .info-box"
-);
-
-const observer = new IntersectionObserver(
-    function(entries) {
-
-        entries.forEach(function(entry) {
-
-            if (entry.isIntersecting) {
-
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-
-            }
-
-        });
-
-    },
-    {
-        threshold: 0.15
-    }
-);
-
-
-cards.forEach(function(card) {
-
-    card.style.opacity = "0";
-    card.style.transform = "translateY(30px)";
-    card.style.transition = "0.6s";
-
-    observer.observe(card);
+    });
 
 });
