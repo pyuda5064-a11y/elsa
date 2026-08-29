@@ -151,7 +151,7 @@ header {
 /* FOTO PROFIL */
 
 .hero-card {
-    width: 280px;
+    width: 200px;
     padding: 35px 25px;
 
     background: white;
@@ -163,8 +163,8 @@ header {
 }
 
 .profile-circle {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 
     margin: auto;
 
@@ -175,7 +175,7 @@ header {
 }
 
 .profile-circle img {
-    width: 300%;
+    width: 100%;
     height: 200%;
 
     object-fit: cover;
