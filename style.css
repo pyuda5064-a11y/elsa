@@ -111,7 +111,7 @@ header {
 /* ================= FOTO ================= */
 
 .hero-image {
-    width: 310px;
+    width: 200px;
     height: 310px;
 
     border-radius: 50%;
@@ -524,7 +524,7 @@ footer span {
 @media (max-width: 480px) {
 
     .hero-image {
-        width: 200px;
+        width: 100px;
         height: 200px;
     }
 
