@@ -174,11 +174,13 @@ header {
     background: #6c63ff;
 }
 
-.profile-circle img {
-    width: 300%;
-    height: 400%;
-
-    object-fit: cover;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    background: #eee;
 }
 
 .hero-card h3 {
