@@ -22,7 +22,7 @@ body {
    GAMBAR UMUM
 ========================= */
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
 }
@@ -122,10 +122,10 @@ nav ul li a:hover {
 
 /* UKURAN FOTO PROFIL */
 .profile-img {
-    width: 180px !important;
-    height: 100px !important;
-    max-width: 100px !important;
-    max-height: 180px !important;
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 120px !important;
+    max-height: 120px !important;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -326,10 +326,10 @@ footer p {
 
     /* FOTO DI HP */
     .profile-img {
-        width: 100px !important;
-        height: 100px !important;
-        max-width: 150px !important;
-        max-height: 150px !important;
+        width: 120px !important;
+        height: 120px !important;
+        max-width: 120px !important;
+        max-height: 120px !important;
     }
 
     .skills-container {
